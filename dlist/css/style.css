@@ -149,9 +149,9 @@ body {
         outline: none;
     }
     .container {
-        box-shadow: none;
-        border-radius: 0;
-        background-color: #fff;
+/*        box-shadow: none !important;*/
+        border-radius: 0 !important;
+/*        background-color: #fff !important;*/
     }
     .header {
         margin-top: 0px;
@@ -165,6 +165,6 @@ body {
     .title i,
     .title-text,
     .title-container {
-        color: #008670;
+/*        color: #008670;*/
     }
 }
