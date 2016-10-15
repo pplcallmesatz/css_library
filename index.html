@@ -27,20 +27,20 @@
 
 </head>
 
-<body class="green">
+<body>
     <div class="container header">
 <div class="title-container">
         <h1 class="title"><i class="icon-logo"></i></h1>
         <h1 class="title-text">CSS Library</h1>
     <p> We have developed a css library which can be useful while working with animations/effects etc.</p>
     
-    <a class="btn btn-lg btn-default">Hover Effect</a>
-    <a class="btn btn-lg btn-default">Animation</a>
+    <a class="btn btn-lg btn-default click" href="#hoverEffects">Hover Effect</a>
+    <a class="btn btn-lg btn-default click" href="#animation">Animation</a>
         </div>
 
     </div>
     
-    <div class="container content">
+    <div class="container content"  id="hoverEffects">
 <h3> HOVER EFFECT</h3>
 <div class="effects row">
 <!--        color change -->
@@ -114,7 +114,7 @@
     </div>
     
       
-    <div class="container content">
+    <div class="container content" id="animation">
 <h3>Animation</h3>
 <div class="animation row">
     <h4 class="sub-heading"> Spinning</h4>
@@ -190,15 +190,26 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     <script>
     $(document).ready(function(){
-        $(".f-green").click(function(){
-            $("body").removeClass("brown").addClass("green");
-            $('head').append('<link rel="stylesheet" href="windows.css" type="text/css" />');
-            console.log("green");
-        })
-        $(".f-brown").click(function(){
-            $("body").removeClass("green").addClass("brown");
-            console.log("brown");
-        })
+        
+//        smooth scroll
+        
+ $('.click').click(function(e){
+   // prevent default action
+   e.preventDefault();
+   
+   // get id of target div (placed in href attribute of anchor element)
+   // and pass it to the scrollToElement function
+    // also, use 2000 as an argument for the scroll speed (2 seconds, 2000 milliseconds)
+   scrollToElement( $(this).attr('href'), 2000 );
+});
+
+var scrollToElement = function(el, ms){
+    var speed = (ms) ? ms : 600;
+    $('html,body').animate({
+        scrollTop: $(el).offset().top
+    }, speed);
+}
+
         
     });
          
