@@ -20,7 +20,7 @@
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
     <link href="dlist/css/style.css" type="text/css" rel="stylesheet">
-        <link href="dlist/css/bootstrap-override.css" type="text/css" rel="stylesheet">
+        <link href="dlist/css/hover-effect.css" type="text/css" rel="stylesheet">
 
 
 
@@ -52,10 +52,12 @@
     </nav>
 -->
 
+<!--
     <div class="fixed-color-pallet">
     <div class="f-brown"></div>
     <div class="f-green"></div>
     </div>
+-->
     <div class="container header">
 <div class="title-container">
         <h1 class="title"><i class="icon-logo"></i></h1>
@@ -67,6 +69,82 @@
         </div>
 
     </div>
+    
+    <div class="container content">
+<h3> HOVER EFFECT</h3>
+<div class="effects row">
+<!--        color change -->
+    <div class="effect-1 text-center col-md-4 col-sm-6">
+        <div class="eff_box">
+    <h4 class="uppercase title">Effect 1</h4>
+        <h5 class="help text-center">Color Change</h5>
+        
+        
+        <div class="eff_content">
+        <h3 class="">  Color Change</h3>
+        </div>
+<!--
+    <div class="ef_footer">
+        
+        </div>
+-->
+        </div>
+    </div>
+    <!--  Font Size -->
+
+    <div class="effect-2 text-center col-md-4 col-sm-6">
+        <div class="eff_box">
+    <h4 class="uppercase title">Effect 2</h4>
+        <h5 class="help text-center">Change in  fontsize</h5>
+        
+        <div class="eff_content">
+        <h3>  Fontsize</h3>
+        </div>
+<!--
+    <div class="ef_footer">
+        
+        </div>
+-->
+        </div>
+    </div>
+        <!--   Visiblity Hidden  -->
+ <div class="effect-3 text-center col-md-4 col-sm-6">
+        <div class="eff_box">
+    <h4 class="uppercase title">Effect 3</h4>
+        <h5 class="help text-center">Visiblity Hidden</h5>
+        
+        <div class="eff_content">
+        <h3>   Opacity</h3>
+        </div>
+<!--
+    <div class="ef_footer">
+        
+        </div>
+-->
+        </div>
+    </div>     <!--   Visiblity Hidden  -->
+            <!--  Border  -->
+
+ <div class="effect-4 text-center col-md-4 col-sm-6">
+        <div class="eff_box">
+    <h4 class="uppercase title">Effect 4</h4>
+        <h5 class="help text-center">Border</h5>
+        
+        <div class="eff_content">
+        <h3> Border</h3>
+        </div>
+<!--
+    <div class="ef_footer">
+        
+        </div>
+-->
+        </div>
+    </div>
+        </div>
+    </div>
+    
+    
+    
     <!-- /.container -->
 
 
@@ -78,6 +156,7 @@
     $(document).ready(function(){
         $(".f-green").click(function(){
             $("body").removeClass("brown").addClass("green");
+            $('head').append('<link rel="stylesheet" href="windows.css" type="text/css" />');
             console.log("green");
         })
         $(".f-brown").click(function(){
@@ -85,40 +164,40 @@
             console.log("brown");
         })
         
-        
+    });
         
 //  Browser
         
-    function msieversion() {
-
-        
-        
-        
-    var ua = window.navigator.userAgent;
-    var msie = ua.indexOf("MSIE ");
-
-           var isWindowsPhone = /windows phone/i.test(navigator.userAgent.toLowerCase());
-
-if (isWindowsPhone)
-{
- alert("windows phone");
-}
-        
-        
-    if (msie > 0)  // If Internet Explorer, return version number
-    {
-        alert(parseInt(ua.substring(msie + 5, ua.indexOf(".", msie))));
-    }
-    else  // If another browser, return 0
-    {
-        alert('otherbrowser');
-    }
-
-    return false;
-}
-msieversion();
-    })
-    
+//    function msieversion() {
+//
+//        
+//        
+//        
+//    var ua = window.navigator.userAgent;
+//    var msie = ua.indexOf("MSIE ");
+//
+//           var isWindowsPhone = /windows phone/i.test(navigator.userAgent.toLowerCase());
+//
+//if (isWindowsPhone)
+//{
+//$('head').append('<link rel="stylesheet" href="windows.css" type="text/css" />');
+//}
+//        
+//        
+//    if (msie > 0)  // If Internet Explorer, return version number
+//    {
+//      $('head').append('<link rel="stylesheet" href="windows.css" type="text/css" />');
+//    }
+//    else  // If another browser, return 0
+//    {
+//
+//    }
+//
+//    return false;
+//}
+//msieversion();
+//    })
+//    
     
     
  
