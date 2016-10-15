@@ -193,7 +193,7 @@
         
 //        smooth scroll
         
-         $('.click').click(function(e){
+ $('.click').click(function(e){
    // prevent default action
    e.preventDefault();
    
@@ -206,7 +206,7 @@
 var scrollToElement = function(el, ms){
     var speed = (ms) ? ms : 600;
     $('html,body').animate({
-        scrollTop: $(el).offset().top() + 100
+        scrollTop: $(el).offset().top
     }, speed);
 }
 
