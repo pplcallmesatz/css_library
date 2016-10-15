@@ -65,6 +65,13 @@
     -o-animation-timing-function: linear;
 }
 .animation .effect-1 .circle.anti-clockwise {
+        animation-direction: reverse;
+        -moz-animation-direction: reverse;
+        -webkit-animation-direction: reverse;
+        -o-animation-direction: reverse;
+
+}.animation .effect-1 .circle.alternate {
+    border-left-color: transparent;
         animation-direction: alternate;
         -moz-animation-direction: alternate;
         -webkit-animation-direction: alternate;
