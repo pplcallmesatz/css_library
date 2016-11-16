@@ -1,9 +1,3 @@
-:root .green {
-    --bg-color: #008670;
-    --white-color: #fff;
-    --trans-color: rgba(255, 255, 255, 0);
-    --box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
-}
 
 body {
     /*    padding-top: 50px;*/
@@ -60,7 +54,7 @@ body {
     margin-bottom: 20px;
         border-radius: 8px;
 
-    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+/*    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);*/
 
 }
 .title-container {
@@ -88,7 +82,7 @@ body {
         height: auto;
         padding: 15px;
         background-color: #fff;
-        box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+/*        box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);*/
         border-radius: 0px 6px 6px 0px;
     }
     .f-brown,
@@ -97,7 +91,7 @@ body {
         border-radius: 50%;
         margin-top: 10px;
         margin-bottom: 10px;
-        box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+/*        box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);*/
     }
     .f-brown {
         background-color: #d38600;

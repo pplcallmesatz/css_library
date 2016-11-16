@@ -1,0 +1,35 @@
+body {
+    background-color: #333;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    color: #fff;
+    font-weight: 300;
+}
+img {
+    display: inline-block !important;
+    height: 75px !important;
+}
+.icon-logo {
+    font-size: 1em !important;
+}
+.highlight {
+    color: #40BC77;
+}
+.header {
+    padding-top:50px; 
+    padding-bottom:50px; 
+}
+.title {
+    font-weight: 100;
+}
+.content {
+    margin-top: 50px;
+}
+.class {
+    margin-top: 50px;
+}
+.box {
+    max-height: 230px;
+    min-height: 230px;
+    padding: 30px
+}
