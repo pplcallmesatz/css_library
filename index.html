@@ -5,119 +5,173 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    
-    
     <link rel="apple-touch-icon" href="dlist/img/fav/icon-60.png">
-<link rel="apple-touch-icon" sizes="76x76" href="dlist/img/fav/icon-76.png">
-<link rel="apple-touch-icon" sizes="120x120" href="dlist/img/fav/icon-120.png">
-<link rel="apple-touch-icon" sizes="152x152" href="dlist/img/fav/icon-152.png">
-<link rel="icon" type="image/x-icon" href="dlist/img/fav/favicon.ico">
-
-
-
-
-<meta name="apple-mobile-web-app-capable" content="yes">
-<meta name="apple-touch-fullscreen" content="yes">
-<meta name="apple-mobile-web-app-status-bar-style" content="default">
-    
-    
-    
+    <link rel="apple-touch-icon" sizes="76x76" href="dlist/img/fav/icon-76.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="dlist/img/fav/icon-120.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="dlist/img/fav/icon-152.png">
+    <link rel="icon" type="image/x-icon" href="dlist/img/fav/favicon.ico">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-touch-fullscreen" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <title>CSS_Library</title>
-
-        
-<!--    Font -->
-<!--    Opensans -->
- <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
-
-    
+    <!--    Font -->
+    <!--    Opensans -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
     <!-- Bootstrap -->
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-
-<!--    <link href="dlist/css/style.css" type="text/css" rel="stylesheet">-->
-<!--        <link href="dlist/css/hover-effect.css" type="text/css" rel="stylesheet">-->
-<!--        <link href="dlist/css/animation.css" type="text/css" rel="stylesheet">-->
-        <link href="dlist/css/black.css" type="text/css" rel="stylesheet">
-        <link href="dlist/css/black-anim.css" type="text/css" rel="stylesheet">
-
-
-
-</head>
+    <!--    <link href="dlist/css/style.css" type="text/css" rel="stylesheet">-->
+    <!--        <link href="dlist/css/hover-effect.css" type="text/css" rel="stylesheet">-->
+    <!--        <link href="dlist/css/animation.css" type="text/css" rel="stylesheet">-->
+    <link href="dlist/css/black.css" type="text/css" rel="stylesheet">
+    <link href="dlist/css/black-anim.css" type="text/css" rel="stylesheet"> </head>
 
 <body>
-    <div class="container header">
-<div class="title-container text-center">
-    <img class="img-responsive" src="dlist/img/fav/icon-152.png">
-<!--        <h1 class="title"><i class="icon-logo"></i></h1>-->
-        <h1 class="title-text">CSS Library</h1>
-    <p> We have developing a css library which can be useful while working with animations/effects etc.</p>
-<!--	&lt;div class="<span class="highlight">animation name | animation type | animation direction</span>"&gt;	&lt;/div	&gt;-->
+    <!--    Spin -->
+    <div class="modal fade" id="singleCircle" tabindex="-1" role="dialog" aria-labelledby="singleCircle">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title"> SPIN</h4> </div>
+                <div class="modal-body">
+                    <div class="row">
+                    <div class="col-sm-4">
+                        <div class="box">
+                        <div class="animation-widget">
+                            <div class="modal-animation circle spin"></div>
+                            <!--            <p class="class">class="<span class="highlight">circle spin</span>"</p>-->
+                        </div>
+                    </div></div>
+                    <div class="col-sm-8">
+                        
+                        <h4 class="ani-title">HTML Mockup</h4> <pre><code>&lt;div class="<span class="class">circle spin <span class="direction"></span></span>"&gt;&lt;/div&gt;</code></pre>
+                    <h4 class="ani-title">Direction</h4>
+                    <div class="direction-control"> <a class="btn btn-primary" data-value="">clockwise </a> <a class="btn btn-primary" data-value="anti-clockwise">anti clockwise </a> <a class="btn btn-primary" data-value="alternate">alernate </a> </div>
+                        </div>
+                    </div>
+                    
+                    
+                </div>
+                <!--
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+--></div>
+            <!-- /.modal-content -->
         </div>
-
+        <!-- /.modal-dialog -->
+    </div> <div class="modal fade" id="doubleCircle" tabindex="-1" role="dialog" aria-labelledby="doubleCircle">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title"> SPIN</h4> </div>
+                <div class="modal-body">
+                    <div class="row">
+                    <div class="col-sm-4">
+                        <div class="box">
+                        <div class="animation-widget">
+                            <div class="modal-animation circle double spin"></div>
+                            <!--            <p class="class">class="<span class="highlight">circle spin</span>"</p>-->
+                        </div>
+                    </div></div>
+                    <div class="col-sm-8">
+                        
+                        <h4 class="ani-title">HTML Mockup</h4> <pre><code>&lt;div class="<span class="class">circle spin <span class="direction"></span></span>"&gt;&lt;/div&gt;</code></pre>
+                    <h4 class="ani-title">Direction</h4>
+                    <div class="direction-control"> <a class="btn btn-primary" data-value="">clockwise </a> <a class="btn btn-primary" data-value="anti-clockwise">anti clockwise </a> <a class="btn btn-primary" data-value="alternate">alernate </a> </div>
+                        </div>
+                    </div>
+                    
+                    
+                </div>
+                <!--
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+--></div>
+            <!-- /.modal-content -->
+        </div>
+        <!-- /.modal-dialog -->
     </div>
-    
-  
-    
-      
+    <!-- /.modal -->
+    <div class="container header">
+        <div class="title-container text-center"> <img class="img-responsive" src="dlist/img/fav/icon-152.png">
+            <!--        <h1 class="title"><i class="icon-logo"></i></h1>-->
+            <h1 class="title-text">CSS Library</h1>
+            <p> We have developing a css library which can be useful while working with animations/effects etc.</p>
+            <!--	&lt;div class="<span class="highlight">animation name | animation type | animation direction</span>"&gt;	&lt;/div	&gt;--></div>
+    </div>
     <div class="container content text-center">
         <div class="row">
-        <div class="col-md-4 col-sm-6">
-            <div class="box">
-            <div class="circle spin"></div>
-            <p class="class">class="<span class="highlight">circle spin</span>"</p>
-                </div>
+            <div class="col-md-4 col-sm-6">
+                <a class="modal-open" data-toggle="modal" data-target="#singleCircle">
+                    <div class="box">
+                        <div class="animation-widget">
+                            <div class="circle spin"></div>
+                            <!--            <p class="class">class="<span class="highlight">circle spin</span>"</p>-->
+                        </div>
+                    </div>
+                </a>
             </div>
-        <div class="col-md-4 col-sm-6">
-            <div class="box">
-            <div class="circle spin anti-clockwise"></div>
-            <p class="class">class="<span class="highlight">circle spin anti-clockwise</span>"</p>
-                </div>
+            <div class="col-md-4 col-sm-6">
+                <a class="modal-open" data-toggle="modal" data-target="#doubleCircle">
+                    <div class="box">
+                        <div class="animation-widget">
+                            <div class="circle double spin"></div>
+                            <!--            <p class="class">class="<span class="highlight">circle spin</span>"</p>-->
+                        </div>
+                    </div>
+                </a>
             </div>
-        <div class="col-md-4 col-sm-6">
-            <div class="box">
-            <div class="circle spin alternate"></div>
-            <p class="class">class="<span class="highlight">circle spin alternate</span>"</p>
-                </div>
-            </div>
-        
         </div>
     </div>
-    
-    
-    
     <!-- /.container -->
-
-
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     <script>
-    $(document).ready(function(){
-        
-//        smooth scroll
-        
- $('.click').click(function(e){
-   // prevent default action
-   e.preventDefault();
-   
-   // get id of target div (placed in href attribute of anchor element)
-   // and pass it to the scrollToElement function
-    // also, use 2000 as an argument for the scroll speed (2 seconds, 2000 milliseconds)
-   scrollToElement( $(this).attr('href'), 2000 );
-});
-
-var scrollToElement = function(el, ms){
-    var speed = (ms) ? ms : 600;
-    $('html,body').animate({
-        scrollTop: $(el).offset().top
-    }, speed);
-}
-
-        
-    });
+        $(document).ready(function () {
          
- 
+            
+             
+            // reset the contents in class
+            $(".modal-open").click(function () {
+                $(".modal-animation").removeClass("anti-clockwise");
+                $(".modal-animation").removeClass("alternate");
+                $('.direction').html("");
+                   $(".modal .direction-control a").removeClass("active");
+                      $(".modal .direction-control a").first().addClass("active");
+            })
+            
+            
+            // direction control function
+            $('.direction-control a').click(function () {
+                // toggle active for selected class
+                   $(".direction-control a").removeClass("active");
+                   $(this).addClass("active");
+                
+                
+                // get the contents of the link that was clicked
+                var dataValue = $(this).data("value");
+                // replace the contents of the div with the attribute value and remove the class from animation
+                $('.direction').html(dataValue);
+                if ($(".modal-animation").hasClass(dataValue) == false) {
+                    $(".modal-animation").removeClass("anti-clockwise");
+                    $(".modal-animation").removeClass("alternate");
+                    $(".modal-animation").addClass(dataValue);
+                }
+                else {
+                    $(".modal-animation").addClass(dataValue);
+                }
+                // cancel the default action of the link by returning false
+                return false;
+            });
+        });
     </script>
 </body>
 

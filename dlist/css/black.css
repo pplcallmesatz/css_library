@@ -4,6 +4,11 @@ body {
     font-size: 16px;
     color: #fff;
     font-weight: 300;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: antialiased; 
+}
+a {
+    cursor: pointer;
 }
 img {
     display: inline-block !important;
@@ -29,7 +34,47 @@ img {
     margin-top: 50px;
 }
 .box {
-    max-height: 230px;
-    min-height: 230px;
-    padding: 30px
+    padding: 30px;
+}
+.animation-widget {
+       width: 100px;
+    height: 100px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.ani-title  {
+    color: #333;
+    font-size: 1em;
+    margin-top: 30px;
+}
+code {
+    color: #0054f2 !important;
+}
+code .class {
+    color: #008139;
+}
+/* Bootstrap override */
+.modal-content {
+    border-radius: 0px;
+}
+.modal-header {
+    border: none;
+}
+.modal-title {
+    color: #333;
+    text-align: center;
+}
+.btn.btn-primary {
+    background-color: #fff;
+    border-color: #008139; 
+    color: #008139;
+    border-radius: 20px;;
+}
+.btn.btn-primary:hover, .btn.btn-primary:focus, .btn.btn-primary:active,
+.btn.btn-primary.active, .btn.btn-primary.active:hover, .btn.btn-primary.active:focus, .btn.btn-primary.active:active{
+    background-color: #008139;
+    border-color: #008139; 
+    color: #fff;
+    outline: none;
+    box-shadow: none;
 }
