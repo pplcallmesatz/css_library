@@ -36,7 +36,7 @@
         -o-animation-duration: 1s;
 }
 
-.circle.double.spin:before {
+.double.spin:before {
 /*    animation-play-state: paused;*/
       animation-name: spin;
     animation-duration: 3s;
@@ -89,18 +89,18 @@
     -o-animation-timing-function: linear;
 }
 .anti-clockwise {
-        animation-direction: reverse;
-        -moz-animation-direction: reverse;
-        -webkit-animation-direction: reverse;
-        -o-animation-direction: reverse;
+        animation-direction: reverse !important;
+        -moz-animation-direction: reverse !important;
+        -webkit-animation-direction: reverse !important;
+        -o-animation-direction: reverse !important;
 
 }
 .alternate {
 /*    border-left-color: transparent;*/
-        animation-direction: alternate;
-        -moz-animation-direction: alternate;
-        -webkit-animation-direction: alternate;
-        -o-animation-direction: alternate;
+        animation-direction: alternate !important;
+        -moz-animation-direction: alternate !important;
+        -webkit-animation-direction: alternate !important;
+        -o-animation-direction: alternate !important;
 
 }
 @keyframes spin {

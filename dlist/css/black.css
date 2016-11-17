@@ -35,6 +35,15 @@ img {
 }
 .box {
     padding: 30px;
+	border: 1px solid transparent;
+	transition: all linear 0.5s;
+	-webkit-transition: all linear 0.5s;
+	-moz-transition: all linear 0.5s;
+	-o-transition: all linear 0.5s;
+	-ms-transition: all linear 0.5s;
+}
+.box:hover {
+	border-color: #40BC77;
 }
 .animation-widget {
        width: 100px;

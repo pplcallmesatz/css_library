@@ -46,8 +46,10 @@
                     <div class="col-sm-8">
                         
                         <h4 class="ani-title">HTML Mockup</h4> <pre><code>&lt;div class="<span class="class">circle spin <span class="direction"></span></span>"&gt;&lt;/div&gt;</code></pre>
-                    <h4 class="ani-title">Direction</h4>
-                    <div class="direction-control"> <a class="btn btn-primary" data-value="">clockwise </a> <a class="btn btn-primary" data-value="anti-clockwise">anti clockwise </a> <a class="btn btn-primary" data-value="alternate">alernate </a> </div>
+                    
+                    <div class="direction-control"> 
+						<h4 class="ani-title">Direction</h4>
+						<a class="btn btn-primary" data-value="">clockwise </a> <a class="btn btn-primary" data-value="anti-clockwise">anti clockwise </a> <a class="btn btn-primary" data-value="alternate">alernate </a> </div>
                         </div>
                     </div>
                     
@@ -80,8 +82,10 @@
                     <div class="col-sm-8">
                         
                         <h4 class="ani-title">HTML Mockup</h4> <pre><code>&lt;div class="<span class="class">circle spin <span class="direction"></span></span>"&gt;&lt;/div&gt;</code></pre>
-                    <h4 class="ani-title">Direction</h4>
-                    <div class="direction-control"> <a class="btn btn-primary" data-value="">clockwise </a> <a class="btn btn-primary" data-value="anti-clockwise">anti clockwise </a> <a class="btn btn-primary" data-value="alternate">alernate </a> </div>
+                    
+                    <div class="direction-control">
+						<h4 class="ani-title">Direction</h4>
+						<a class="btn btn-primary" data-value="">clockwise </a> <a class="btn btn-primary" data-value="anti-clockwise">anti clockwise </a> <a class="btn btn-primary" data-value="alternate">alernate </a> </div>
                         </div>
                     </div>
                     
@@ -137,7 +141,10 @@
     <script>
         $(document).ready(function () {
          
-            
+      if (navigator.userAgent.indexOf('Safari') != -1 && navigator.userAgent.indexOf('Chrome') == -1)  { 
+$(".direction-control").hide();
+}
+			 
              
             // reset the contents in class
             $(".modal-open").click(function () {
@@ -145,7 +152,6 @@
                 $(".modal-animation").removeClass("alternate");
                 $('.direction').html("");
                    $(".modal .direction-control a").removeClass("active");
-                      $(".modal .direction-control a").first().addClass("active");
             })
             
             
