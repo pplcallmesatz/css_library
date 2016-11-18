@@ -4,7 +4,7 @@
 
 
 /* Effect 1  -  Single Circle */
-.circle {
+.bl-circle {
     width: 100px;
     height: 100px;
     border: 2px solid transparent;
@@ -13,7 +13,7 @@
     border-left-color: #d38600;
     position: relative;
 }
-.circle.double::before, .circle.triple::before {
+.bl-double.bl-circle::before, .bl-triple.bl-circle::before {
     content:"";
     position: absolute;
     display: block;
@@ -21,12 +21,12 @@
     right: 10px;
     bottom: 10px;
     top: 10px;
-    border: 3px solid transparent;
+    border: 2px solid transparent;
     border-left-color: green;
 /*    border-top-color: green;*/
     border-radius: 50%;
 }
-.circle.triple::after {
+.bl-triple.bl-circle::after {
     content:"";
     position: absolute;
     display: block;
@@ -34,14 +34,14 @@
     right: 20px;
     bottom: 20px;
     top: 20px;
-    border: 3px solid transparent;
+    border: 2px solid transparent;
     border-left-color: red;
 /*    border-top-color: red;*/
     border-radius: 50%;
 }
 
 
-.spin {
+.bl-spin {
 /*    animation-play-state: paused;*/
       animation-name: spin;
     animation-duration: 1s;

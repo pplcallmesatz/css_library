@@ -31,7 +31,7 @@
 
     <!-- /.modal -->
     <div class="container header">
-        <div class="title-container text-center"> <img class="img-responsive" src="dlist/img/fav/icon-152.png">
+        <div class="title-container text-center"><a href="index.html"> <img class="img-responsive" src="dlist/img/fav/icon-152.png"></a>
             <!--        <h1 class="title"><i class="icon-logo"></i></h1>-->
             <h1 class="title-text">CSS Library</h1>
             <p> We have developing a css library which can be useful while working with animations/effects etc.</p>
@@ -40,29 +40,29 @@
     <div class="container content text-center">
         <div class="row">
             <div class="col-md-4 col-sm-6">
-                <a class="modal-open" href="1.html" target="_blank">
+                <a class="modal-open" href="pages/1.html" target="_blank">
                     <div class="box">
                         <div class="animation-widget">
-                            <div class="circle spin"></div>
+                            <div class="bl-circle bl-spin"></div>
                             <!--            <p class="class">class="<span class="highlight">circle spin</span>"</p>-->
                         </div>
                     </div>
                 </a>
             </div>
             <div class="col-md-4 col-sm-6">
-                <a class="modal-open"  href="2.html" target="_blank">
+                <a class="modal-open"  href="pages/2.html" target="_blank">
                     <div class="box">
                         <div class="animation-widget">
-                            <div class="circle double spin"></div>
+                            <div class="bl-circle bl-double bl-spin"></div>
                             <!--            <p class="class">class="<span class="highlight">circle spin</span>"</p>-->
                         </div>
                     </div>
                 </a>
             </div><div class="col-md-4 col-sm-6">
-                <a class="modal-open"  href="3.html" target="_blank">
+                <a class="modal-open"  href="pages/3.html" target="_blank">
                     <div class="box">
                         <div class="animation-widget">
-                            <div class="circle triple spin"></div>
+                            <div class="bl-circle bl-triple bl-spin"></div>
                             <!--            <p class="class">class="<span class="highlight">circle spin</span>"</p>-->
                         </div>
                     </div>
@@ -70,6 +70,13 @@
             </div>
         </div>
     </div>
+    <footer>
+        <div class="container">
+        
+        <p>&copy; copyrights @ 2016 | All rights reserved</p>
+        </div>
+    
+    </footer>
     <!-- /.container -->
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
@@ -83,37 +90,10 @@
 //}
 			 
              
-            // reset the contents in class
-            $(".modal-open").click(function () {
-                $(".modal-animation").removeClass("anti-clockwise");
-                $(".modal-animation").removeClass("alternate");
-                $('.direction').html("");
-                   $(".modal .direction-control a").removeClass("active");
-            })
-            
+     
             
             // direction control function
-            $('.direction-control a').click(function () {
-                // toggle active for selected class
-                   $(".direction-control a").removeClass("active");
-                   $(this).addClass("active");
-                
-                
-                // get the contents of the link that was clicked
-                var dataValue = $(this).data("value");
-                // replace the contents of the div with the attribute value and remove the class from animation
-                $('.direction').html(dataValue);
-                if ($(".modal-animation").hasClass(dataValue) == false) {
-                    $(".modal-animation").removeClass("anti-clockwise");
-                    $(".modal-animation").removeClass("alternate");
-                    $(".modal-animation").addClass(dataValue);
-                }
-                else {
-                    $(".modal-animation").addClass(dataValue);
-                }
-                // cancel the default action of the link by returning false
-                return false;
-            });
+            
         });
     </script>
 </body>

@@ -27,9 +27,7 @@ img {
 .title {
     font-weight: 100;
 }
-.content {
-    margin-top: 50px;
-}
+
 .class {
     margin-top: 50px;
 }
@@ -68,6 +66,19 @@ code {
 code .class {
     color: #008139;
 }
+.content {
+    margin-bottom: 40px;
+}
+footer {
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    width: 100%;
+}
+footer p {
+    margin: 0px;
+}
+
 /* Bootstrap override */
 .modal-content {
     border-radius: 0px;
@@ -92,4 +103,21 @@ code .class {
     color: #fff;
     outline: none;
     box-shadow: none;
+}
+
+@media (max-width: 767px) {
+    .header {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    .btn {
+        font-size: 0.8em !important;
+    }
+}
+@media (min-width: 768px) {
+    .content {
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+    
 }
