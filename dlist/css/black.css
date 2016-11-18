@@ -42,7 +42,7 @@ img {
 	-o-transition: all linear 0.5s;
 	-ms-transition: all linear 0.5s;
 }
-.box:hover {
+.main .box:hover {
 	border-color: #40BC77;
 }
 .animation-widget {
@@ -52,12 +52,18 @@ img {
     margin-right: auto;
 }
 .ani-title  {
-    color: #333;
+/*    color: #333;*/
     font-size: 1em;
     margin-top: 30px;
 }
+pre {
+        max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
 code {
     color: #0054f2 !important;
+
 }
 code .class {
     color: #008139;

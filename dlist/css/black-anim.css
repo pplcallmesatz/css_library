@@ -9,10 +9,11 @@
     height: 100px;
     border: 2px solid transparent;
     border-radius: 50%;
-    border-top-color: #d38600;
+/*    border-top-color: #d38600;*/
     border-left-color: #d38600;
+    position: relative;
 }
-.circle.double::before {
+.circle.double::before, .circle.triple::before {
     content:"";
     position: absolute;
     display: block;
@@ -22,46 +23,22 @@
     top: 10px;
     border: 3px solid transparent;
     border-left-color: green;
-    border-top-color: green;
+/*    border-top-color: green;*/
     border-radius: 50%;
 }
-.circle.double.spin {
-     animation-name: spin;
-        animation-duration: 1s;
-    -webkit-animation-name: spin;
-        -webkit-animation-duration: 1s;
-    -moz-animation-name: spin;
-        -moz-animation-duration: 1s;
-    -o-animation-name: spin;
-        -o-animation-duration: 1s;
+.circle.triple::after {
+    content:"";
+    position: absolute;
+    display: block;
+    left: 20px;
+    right: 20px;
+    bottom: 20px;
+    top: 20px;
+    border: 3px solid transparent;
+    border-left-color: red;
+/*    border-top-color: red;*/
+    border-radius: 50%;
 }
-
-.double.spin:before {
-/*    animation-play-state: paused;*/
-      animation-name: spin;
-    animation-duration: 3s;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
-    
-/* webkit  */
-     -webkit-animation-name: spin;
-    -webkit-animation-duration: 3s;
-    -webkit-animation-iteration-count: infinite;
-    -webkit-animation-timing-function: linear;
-    
-/* moz */
-     -moz-animation-name: spin;
-    -moz-animation-duration: 3s;
-    -moz-animation-iteration-count: infinite;
-    -moz-animation-timing-function: linear;
-/* o */
-     -o-animation-name: spin;
-    -o-animation-duration: 3s;
-    -o-animation-iteration-count: infinite;
-    -o-animation-timing-function: linear;
-}
-
-
 
 
 .spin {
@@ -88,6 +65,7 @@
     -o-animation-iteration-count: infinite;
     -o-animation-timing-function: linear;
 }
+
 .anti-clockwise {
         animation-direction: reverse !important;
         -moz-animation-direction: reverse !important;
@@ -103,6 +81,8 @@
         -o-animation-direction: alternate !important;
 
 }
+
+
 @keyframes spin {
     0% {
         transform: rotate(0deg);
